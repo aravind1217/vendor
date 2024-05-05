@@ -17,7 +17,7 @@
 - python manage.py makemigrations
 - python manage.py migrate
 
-## Superuser creation and Token generation
+## Superuser
 - python manage.py createsuperuser
 
 
@@ -44,9 +44,6 @@
 - Fulfillment Rate: The percentage of successfully fulfilled purchase orders (completed without issues) compared to the total number of purchase orders issued to the vendor.
 
 ## Update recalculation of  average_response_time:
-### using curl:
 - http://127.0.0.1:8000/api/purchase_orders/{po_id}/acknowledge/
-
-
 - here this endpoint is used to acknowledge the purchase_order with given po_id and trigger the recalculation of average_reponse_time.
 
